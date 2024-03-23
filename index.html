@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            background-color: #8C6495; /* Purple background color */
+            background-image: linear-gradient(to right, #8C6495, #48C9B0);
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        main h1 {
+            border-bottom: 2px solid white;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .skills button {
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="C++-Logo.wine.jpg" alt="Приоритет" class="profile-image">
+        <h1>karasik</h1>
+        <p>Программист и веб-разработчик</p>
+    </header>
+    <nav>
+        <a href="#about">О себе</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#skills">Навыки</a>
+        <a href="#experience">Опыт</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h1>Обо мне</h1>
+            <p>Зовут ------ и мне 15 лет (родился 10.03.2009)</p>
+            <p>Моя любовь к программированию это следствия компьютерных игр</p>
+            <p>Я занимоюсь программированием с 12 лет. Первый язык программирования который я выучил был Python</p>
+            <p>Я учусь в специализированой школе для будущих программистов</p>
+        </section>
+        <section id="portfolio">
+            <h1>Портфолио</h1>
+            <p>Список моих проектов, включая ссылки на их живые демонстрации и репозитории кода.</p>
+            <p>Сдесь приведены самые сложные и интересные проекты</p>
+            <ul>
+                <li><a href="https://karas4ik.github.io/hf2/">Крестики нолики с ИИ на Python</a></li>
+                <li><a href="https://karas4ik.github.io/hf1/">Крестики нолики с ИИ на C++</a></li>
+                <li><a href="https://coruscating-blini-88a58e.netlify.app/">Сайт на добавку людей в друзья в дискорд</a></li>
+            </ul>
+        </section>
+        <section id="skills" class="skills">
+            <h1>Навыки и знания</h1>
+            <p>Список моих навыков, таких как языки программирования, фреймворки и инструменты.</p>
+            <button id="skillsShowMore">Показать</button>
+            <ul id="skillsList" class="hidden">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+        <section id="experience" class="experience">
+            <h1>Опыт</h1>
+            <p>Преимущественного опыта у меня ещё нету, так как я ещё школьник</p>
+            <p>Но уже поподаю на вебинары для студентов и активно принимаю участие в разных олимпиадах и конкурсах по информатике</p>
+        </section>
+        <section id="experience" class="experience">
+            <h1>Обучение</h1>
+            <p>
+                Сдесь показано время начала одного изучения языка до какого-то момента
+            </p>
+            <ul>
+                <li>
+                    <h2>1) C++/C</h2>
+                    <h3>С++/С - самый приоритетный язык для меня в настоящий момент</h3>
+                    <h3>Примерно я трачу 3-3,5 часа в день на его изучение</h3>
+                    <p>
+                        2023 - Сейчас
+                    </p>
+                </li>
+                <li>
+                    <h2>2) Js/HTML/GSS</h2>
+                    <h3>Мне очень нравится веб разработка</h3>
+                    <h3>Примерно я трачу 2-1,5 часа в день на его изучение</h3>
+                    <p>
+                        2024 - Сейчас
+                    </p>
+                </li>
+                <li>
+                    <h2>3) Python</h2>
+                    <h3>Я не особо интересуюсь Python так как хорошо его знаю и ктому же изучаю его в школе</h3>
+                    <h3>Изучаю Python или тренеруюсь в нём по выходным</h3>
+                    <p>
+                        2020 - 2024
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <button id="back-to-top" title="Back to top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 18 14-14M18 6 6 18"/></svg>
+        </button>
+    </main>
+    <footer>
+        Авторские права защищены © 2023 karasik
+    </footer>
+    <script>
+        // Get the necessary elements
+        const skillsShowMore = document.getElementById('skillsShowMore');
+        const skillsList = document.getElementById('skillsList');
+    
+        // Initially hide the skills list
+        skillsList.style.display = 'none';
+    
+        // Toggle the skills list Display
+        skillsShowMore.addEventListener('click', () => {
+            if (skillsList.style.display === 'none' || skillsList.style.display === '') {
+                skillsList.style.display = 'block';
+                skillsShowMore.textContent = 'Убрать';
+            } else {
+                skillsList.style.display = 'none';
+                skillsShowMore.textContent = 'Показать';
+            }
+        });
+    
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<body> 
+<html>
